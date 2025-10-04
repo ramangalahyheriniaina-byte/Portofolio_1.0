@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="globale">
+    <!-- Sidebar -->
+    <section class="sidebar" id="sidebar">
+      <div class="Titre">
+        <div class="Titre-logo" aria-hidden="true"></div>
+        <h1>Portfolio</h1>
+      </div>
+      <div class="selection">Navigation</div>
+      <nav class="nav">
+        <a href="#home" class="nav-link active" data-target="home">
+          <img src="icons/home-25.png" class="icon" alt="Accueil"><span class="label">Home</span>
+        </a>
+        <a href="#projets" class="nav-link" data-target="projets">
+          <img src="icons/pc-.png" class="icon" alt="Projets"><span class="label">Projets</span>
+        </a>
+        <a href="#competences" class="nav-link" data-target="competences">
+          <img src="icons/competence.png" class="icon" alt="Compétences"><span class="label">Compétences</span>
+        </a>
+        <a href="#apropos" class="nav-link" data-target="apropos">
+          <img src="icons/propos.png" class="icon" alt="À propos"><span class="label">À propos</span>
+        </a>
+        <a href="#contact" class="nav-link" data-target="contact">
+          <img src="icons/contact.png" class="icon" alt="Contact"><span class="label">Contact</span>
+        </a>
+      </nav>
+    </section>
+
+    <!-- Contenu principal -->
+    <main class="contenu">
+      <header>
+        <button class="hamb" id="hamb" aria-label="Ouvrir le menu">☰</button>
+
+        <div class="header-actions">
+          <div class="status-container">
+            <div class="status-indicator">
+              <div class="status-dot"></div>
+              <span class="status-text">Disponible pour des opportunités</span>
+            </div>
+          </div>
+          <a href="documents/CV-Tiavina.odt" download class="download-cv-btn">
+            <span class="cv-text">Télécharger mon CV</span>
+            <img src="icons/documents.png" class="cv-icon" alt="">
+            <img src="icons/download-64.png" width="20px" alt="Télécharger">
+          </a>
+        </div>
+
+        <div class="Action-tete">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+            <div class="theme-text">Mode sombre</div>
+          </div>
+          <div class="Profil" title="Profil">
+            <span>HT</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- HOME -->
+      <section id="home" class="contenue-principale active">
+        <div class="home-content">
+          <div class="home-left">
+            <h1>Bienvenue sur mon portfolio</h1>
+            <h3 class="subtitle">Je suis</h3>
+            <p><strong>RAMANGALAHY Heriniaina Tiavina</strong>, étudiant passionné en informatique. Mon objectif est de devenir <strong>ingénieur DevOps</strong> et de contribuer à des projets innovants en combinant développement, systèmes et cloud.</p>
+            <div class="home-actions">
+              <a href="#projets" class="cta-button">Voir mes projets</a>
+              <a href="#contact" class="cta-button secondary">Me contacter</a>
+            </div>
+          </div>
+          <div class="home-right">
+            <div class="profile-circle">
+              <img src="icons/Profils.jpg" alt="Profil">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETS -->
+      <section id="projets" class="contenue-principale">
+        <h2>Mes Projets</h2>
+        <div class="projets-grid">
+          <div class="projet-card">
+            <h3>Application Android</h3>
+            <p>Une application de gestion de tâches développée avec Kotlin và Room Database.</p>
+            <span class="techno">Kotlin</span>
+            <span class="techno">Room DB</span>
+          </div>
+          <div class="projet-card">
+            <h3>Site E-commerce</h3>
+            <p>Plateforme e-commerce avec React et Node.js, intégration de paiement Stripe.</p>
+            <span class="techno">React</span>
+            <span class="techno">Node.js</span>
+          </div>
+          <div class="projet-card">
+            <h3>API RESTful</h3>
+            <p>API pour application de réservation avec Spring Boot et PostgreSQL.</p>
+            <span class="techno">Spring Boot</span>
+            <span class="techno">PostgreSQL</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPÉTENCES -->
+      <section id="competences" class="contenue-principale">
+        <h2>Compétences</h2>
+        <div class="competences-grid">
+          <div class="competence-categorie">
+            <h3>Développement</h3>
+            <ul>
+              <li>Python, Bash</li>
+              <li>Terraform DSL</li>
+              <li>Scripting</li>
+            </ul>
+          </div>
+          <div class="competence-categorie">
+            <h3>Outils & Technologies</h3>
+            <ul>
+              <li>Linux, Git, GitHub/GitLab</li>
+              <li>Docker & Kubernetes</li>
+              <li>AWS, GitHub Action</li>
+              <li>Administration réseau</li>
+            </ul>
+          </div>
+          <div class="competence-categorie">
+            <h3>Méthodologies</h3>
+            <ul>
+              <li>CI/CD pipelines</li>
+              <li>Infrastructure as Code</li>
+              <li>Cloud</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- À PROPOS -->
+      <section id="apropos" class="contenue-principale">
+        <h2>À propos</h2>
+        <div class="apropos-content">
+          <div class="bio">
+            <h3>Qui suis-je ?</h3>
+            <p>Je m'appelle <strong>Ramangalahy Heriniaina Tiavina</strong>, actuellement en 3ème année à GE-IT.</p>
+            <p>Durant mon parcours, j’ai développé une solide base en <strong>DevOps, développement web et mobile, et administration système</strong>.</p>
+            <p>Je suis passionné par l’automatisation, le cloud et la cybersécurité.  
+            Mon ambition est de travailler sur des projets où je peux allier <em>innovation</em> et <em>performance</em>.</p>
+          </div>
+          <div class="formations">
+            <h3>Parcours</h3>
+            <ul>
+              <li>Licence 3 Génie Électrique et Informatique Industrielle</li>
+              <li>DUT Informatique</li>
+              <li>Baccalauréat Scientifique</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contenue-principale">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+
+          <!-- Infos personnelles -->
+          <div class="contact-card">
+            <h3>Contactez-moi</h3>
+
+            <p>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ramangalahyheriniaina@gmail.com&su=Contact%20depuis%20ton%20Portfolio&body=Salama%20Heriniaina%2C%0A%0AJe%20viens%20de%20voir%20ton%20portfolio%20et%20je%20souhaite%20discuter%20avec%20toi."
+                 target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i> Envoyer un email
+              </a>
+            </p>
+
+            <p>
+              <a href="https://wa.me/261383161264?text=Salama%20Heriniaina%20!" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i> Téléphone : 
+              <a href="tel:+261383161264">+261 38 31 612 64</a>
+            </p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Localisation : Antananarivo, Madagascar</p>
+          </div>
+
+          <!-- Réseaux sociaux -->
+          <div class="contact-card">
+            <h3>Réseaux</h3>
+            <p><a href="" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></p>
+            <p><a href="https://twitter.com/tonprofil" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a></p>
+          </div>
+
+          <!-- Liens rapides -->
+          <div class="contact-card">
+            <h3>Liens</h3>
+            <p><a href="documents/CV-Tiavina.odt" download><i class="fa-solid fa-file"></i> Télécharger mon CV</a></p>
+            <p><a href="#projets"><i class="fa-solid fa-code"></i> Mes projets</a></p>
+            <p><a href="#apropos"><i class="fa-solid fa-user"></i> À propos</a></p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
