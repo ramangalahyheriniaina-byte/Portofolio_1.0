@@ -123,6 +123,7 @@ body {
 
 .nav .icon {
     width: 20px;
+    height: 20px;
 }
 
 /* Header */
@@ -355,6 +356,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-top: 0;
     transition: color 0.3s;
 }
@@ -469,6 +471,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .techno {
@@ -511,6 +514,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .competence-categorie ul {
@@ -546,6 +550,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .bio p {
@@ -592,6 +597,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .contact-card p {
