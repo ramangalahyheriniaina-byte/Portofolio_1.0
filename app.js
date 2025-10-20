@@ -9,13 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         contentSections.forEach(section => {
             section.classList.remove('active');
-            section.style.display = 'none';
         });
         
         const targetSection = document.getElementById(targetId);
         if (targetSection) {
             targetSection.classList.add('active');
-            targetSection.style.display = 'block';
         }
         
         // Mettre à jour la navigation active
@@ -116,6 +114,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!sidebar.contains(e.target) && e.target !== hamburger) {
                 sidebar.classList.remove('active');
             }
+        }
+    });
+
+    // Correction pour éviter les bugs de positionnement
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 820) {
+            sidebar.classList.remove('active');
         }
     });
 });

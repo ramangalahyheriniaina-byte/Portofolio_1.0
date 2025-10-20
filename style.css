@@ -28,11 +28,14 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -58,6 +61,7 @@ body {
     top: 0;
     overflow-y: auto;
     transition: background-color 0.3s, border-color 0.3s;
+    z-index: 100;
 }
 
 /* Sidebar titre */
@@ -123,6 +127,7 @@ body {
 
 .nav .icon {
     width: 20px;
+    height: 20px;
 }
 
 /* Header */
@@ -137,7 +142,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    z-index: 100;
+    z-index: 99;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -328,16 +333,13 @@ input:checked + .slider:before {
 .contenu {
     overflow-y: auto;
     position: relative;
+    height: 100vh;
 }
 
 .contenue-principale {
     padding: 40px;
     display: none;
     animation: fadeIn 0.5s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     min-height: calc(100vh - 80px);
 }
 
@@ -348,13 +350,13 @@ input:checked + .slider:before {
 
 .contenue-principale.active {
     display: block;
-    position: relative;
 }
 
 .contenue-principale h1, .contenue-principale h2 {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-top: 0;
     transition: color 0.3s;
 }
@@ -469,6 +471,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .techno {
@@ -511,6 +514,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .competence-categorie ul {
@@ -546,6 +550,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .bio p {
@@ -592,6 +597,7 @@ input:checked + .slider:before {
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .contact-card p {
